@@ -7,6 +7,7 @@ const conexion = mysql.createConnection({
     database: "codecrafters"
 });
 
+// Verifica si la conexión fue exitosa
 conexion.connect((error) => {
     if(error){
         console.log("Error de conexión:", error);

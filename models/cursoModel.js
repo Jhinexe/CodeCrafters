@@ -1,5 +1,6 @@
 const conexion = require("../config/db");
 
+// Obtiene todos los cursos desde la base de datos
 const obtenerTodos = (callback) => {
 
     const sql = "SELECT * FROM cursos";
@@ -16,6 +17,7 @@ const obtenerTodos = (callback) => {
 
 };
 
+// Elimina un curso según el ID recibido
 const eliminarCurso = (id, callback) => {
 
     console.log("MODELO PASO 1");
@@ -44,6 +46,7 @@ const eliminarCurso = (id, callback) => {
 
 };
 
+// Inserta un nuevo curso en la base de datos
 const crearCurso = (datos, callback) => {
 
     const sql = `
@@ -74,6 +77,7 @@ const crearCurso = (datos, callback) => {
 
 };
 
+// Actualiza los datos de un curso existente
 const editarCurso = (
     id,
     datos,

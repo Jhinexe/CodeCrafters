@@ -1,5 +1,6 @@
 const cursoModel = require("../models/cursoModel");
 
+// Controlador encargado de listar cursos
 const obtenerCursos = (req, res) => {
 
     cursoModel.obtenerTodos((error, resultados) => {
@@ -15,6 +16,7 @@ const obtenerCursos = (req, res) => {
 
 };
 
+// Controlador encargado de eliminar cursos
 const eliminarCurso = (req, res) => {
 
     const id = req.params.id;
@@ -41,6 +43,7 @@ const eliminarCurso = (req, res) => {
 
 };
 
+// Controlador encargado de crear cursos
 const crearCurso = (req, res) => {
 
     cursoModel.crearCurso(
@@ -63,6 +66,7 @@ const crearCurso = (req, res) => {
 
 };
 
+// Controlador encargado de actualizar cursos
 const editarCurso = (req, res) => {
 
     const id = req.params.id;

@@ -1,5 +1,6 @@
 let idCursoEditar = null;
 
+// Carga los cursos al iniciar el panel de administración
 fetch("/cursos")
     .then(response => response.json())
     .then(cursos => {
