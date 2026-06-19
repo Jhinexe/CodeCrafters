@@ -80,7 +80,7 @@ node server.js
 o
 
 ```bash
-npm start
+npm run start
 ```
 
 ### Acceder al sistema
@@ -185,7 +185,7 @@ CodeCrafters
 │   └── db.js
 │
 ├── controllers
-│   └── cursosController.js
+│   └── cursoController.js
 │
 ├── database
 │   └── codecrafters.sql
@@ -221,7 +221,7 @@ CodeCrafters
 
 * `server.js`: Configuración principal del servidor Express.
 * `config/db.js`: Conexión a la base de datos MySQL.
-* `controllers/cursosController.js`: Lógica de negocio del CRUD.
+* `controllers/cursoController.js`: Lógica de negocio del CRUD.
 * `models/cursoModel.js`: Consultas SQL relacionadas con los cursos.
 * `views/index.html`: Vista pública principal.
 * `views/login.html`: Inicio de sesión.
