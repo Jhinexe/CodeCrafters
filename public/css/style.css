@@ -1,0 +1,54 @@
+/* Estilos generales */
+body{
+    font-family: Arial, sans-serif;
+}
+
+/* Hero principal */
+.hero{
+    background-color: #1E293B;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Eslogan */
+.slogan{
+    color: #00BFFF;
+    font-weight: bold;
+}
+
+/* Botones */
+.btn-primary{
+    background-color: #00BFFF;
+    border: none;
+}
+
+.btn-primary:hover{
+    background-color: #009ACD;
+}
+
+/* Títulos */
+h2{
+    color: #121212;
+    font-weight: bold;
+}
+
+/* Tarjetas de cursos */
+.card{
+    transition: transform 0.3s;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+}
+
+/* Footer */
+footer{
+    background-color: #121212;
+}
+
+.hero-logo{ 
+    max-width: 300px; 
+    width: 100%; 
+    height: auto; 
+    margin-bottom: 5px; 
+}
