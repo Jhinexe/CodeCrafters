@@ -180,3 +180,36 @@ fetch(url, {
 
     }
 );
+
+// Carga los alumnos inscritos en el panel de administración
+fetch("/inscripciones")
+    .then(response => response.json())
+    .then(inscripciones => {
+
+        const tabla =
+        document.getElementById("tablaInscripciones");
+
+        tabla.innerHTML = "";
+
+        inscripciones.forEach(inscripcion => {
+
+            const fecha = new Date(inscripcion.fecha_inscripcion).toLocaleDateString("es-CL");
+
+            tabla.innerHTML += `
+                <tr>
+                    <td>${inscripcion.id}</td>
+                    <td>${inscripcion.nombre_alumno}</td>
+                    <td>${inscripcion.correo_alumno}</td>
+                    <td>${inscripcion.nombre_curso}</td>
+                    <td>${inscripcion.profesor}</td>
+                    <td>${inscripcion.seccion}</td>
+                    <td>${fecha}</td>
+                </tr>
+            `;
+
+        });
+
+    })
+    .catch(error => {
+        console.log(error);
+    });

@@ -105,6 +105,15 @@
                     <p class="card-text">
                         Aprende HTML5, CSS3, JavaScript y diseño responsivo para crear sitios web modernos.
                     </p>
+                    <button
+                        class="btn btn-primary btn-inscripcion"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalInscripcion"
+                        data-curso-id="1"
+                        data-curso-nombre="Desarrollo Web"
+                        data-profesor="Juan Pérez">
+                        Inscribirme
+                    </button>
 
                 </div>
 
@@ -125,6 +134,15 @@
                     <p class="card-text">
                         Diseña, administra y consulta bases de datos utilizando MySQL.
                     </p>
+                    <button
+                        class="btn btn-primary btn-inscripcion"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalInscripcion"
+                        data-curso-id="2"
+                        data-curso-nombre="Bases de Datos"
+                        data-profesor="María López">
+                        Inscribirme
+                    </button>
 
                 </div>
 
@@ -145,6 +163,15 @@
                     <p class="card-text">
                         Domina uno de los lenguajes más utilizados en el desarrollo web moderno.
                     </p>
+                    <button
+                        class="btn btn-primary btn-inscripcion"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalInscripcion"
+                        data-curso-id="3"
+                        data-curso-nombre="Programación con JavaScript"
+                        data-profesor="Carlos Rodríguez">
+                        Inscribirme
+                    </button>
 
                 </div>
 
@@ -205,6 +232,76 @@
     </p>
 
 </footer>
+
+<div class="modal fade" id="modalInscripcion" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Inscripción a curso</h5>
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal">
+                </button>
+            </div>
+
+            <div class="modal-body">
+
+                <form id="formInscripcion">
+
+                    <input type="hidden" id="curso_id">
+
+                    <div class="mb-3">
+                        <label class="form-label">Curso seleccionado</label>
+                        <input
+                            type="text"
+                            id="curso_nombre"
+                            class="form-control"
+                            readonly>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Nombre del alumno</label>
+                        <input
+                            type="text"
+                            id="nombre_alumno"
+                            class="form-control"
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Correo del alumno</label>
+                        <input
+                            type="email"
+                            id="correo_alumno"
+                            class="form-control"
+                            required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Sección</label>
+                        <select id="seccion" class="form-control" required>
+                            <option value="">Seleccione una sección</option>
+                            <option value="A">Sección A</option>
+                            <option value="B">Sección B</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">
+                        Confirmar inscripción
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
 <script src="/js/main.js"></script>
 

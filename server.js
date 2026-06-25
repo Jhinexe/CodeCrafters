@@ -16,6 +16,9 @@ require("./config/db");
 const cursosController =
 require("./controllers/cursoController");
 
+const inscripcionController =
+require("./controllers/inscripcionController");
+
 app.use(express.urlencoded({extended:true}));
 
 // Permite acceder a archivos CSS, JS e imágenes
@@ -36,6 +39,16 @@ app.get("/cursos", cursosController.obtenerCursos);
 
 // Ruta para eliminar un curso según su ID
 app.delete("/eliminarCurso/:id", cursosController.eliminarCurso);
+
+app.post(
+    "/crearInscripcion",
+    inscripcionController.crearInscripcion
+);
+
+app.get(
+    "/inscripciones",
+    inscripcionController.obtenerInscripciones
+);
 
 // Validación de credenciales de acceso
 app.post("/login", (req, res) => {
