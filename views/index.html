@@ -15,8 +15,9 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
 
-        <a class="navbar-brand fw-bold" href="#">
-            CodeCrafters
+        <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+            <img src="/img/logo.png" alt="Logo CodeCrafters" class="navbar-logo">
+            <span>CodeCrafters</span>
         </a>
 
         <button class="navbar-toggler" type="button"
@@ -84,29 +85,42 @@
 
 </section>
 
+<div class="hero-separator">
+    <img
+        src="/img/programacion.jpg"
+        alt="Programación CodeCrafters">
+</div>
+
 <section id="cursos" class="container py-5">
 
-    <h2 class="text-center mb-5">
-        Cursos Destacados
-    </h2>
+    <div class="text-center mb-5">
+        <span class="section-badge">Formación tecnológica</span>
+        <h2 class="section-title mt-2">
+            Cursos Destacados
+        </h2>
+        <p class="section-description">
+            Elige un curso, selecciona tu sección e inscríbete directamente desde la plataforma.
+        </p>
+    </div>
 
     <div class="row">
 
         <div class="col-md-4 mb-4">
 
-            <div class="card h-100 shadow">
+            <div class="card course-card h-100 shadow">
 
                 <div class="card-body">
 
                     <h4 class="card-title">
-                        Desarrollo Web
+                        Desarrollo Web 💻
                     </h4>
 
                     <p class="card-text">
                         Aprende HTML5, CSS3, JavaScript y diseño responsivo para crear sitios web modernos.
                     </p>
+                    <img src="/img/web.png" alt="Curso de Desarrollo Web" class="course-img">
                     <button
-                        class="btn btn-primary btn-inscripcion"
+                        class="btn btn-primary btn-inscripcion w-100 mt-3"
                         data-bs-toggle="modal"
                         data-bs-target="#modalInscripcion"
                         data-curso-id="1"
@@ -123,19 +137,20 @@
 
         <div class="col-md-4 mb-4">
 
-            <div class="card h-100 shadow">
+            <div class="card course-card h-100 shadow">
 
                 <div class="card-body">
 
                     <h4 class="card-title">
-                        Bases de Datos
+                        Bases de Datos 🗄️
                     </h4>
 
                     <p class="card-text">
                         Diseña, administra y consulta bases de datos utilizando MySQL.
                     </p>
+                    <img src="/img/basededatos.jpg" alt="Curso de Bases de Datos" class="course-img">
                     <button
-                        class="btn btn-primary btn-inscripcion"
+                        class="btn btn-primary btn-inscripcion w-100 mt-3"
                         data-bs-toggle="modal"
                         data-bs-target="#modalInscripcion"
                         data-curso-id="2"
@@ -152,19 +167,20 @@
 
         <div class="col-md-4 mb-4">
 
-            <div class="card h-100 shadow">
+            <div class="card course-card h-100 shadow">
 
                 <div class="card-body">
 
                     <h4 class="card-title">
-                        Programación con JavaScript
+                        Programación con JavaScript ♨️
                     </h4>
 
                     <p class="card-text">
                         Domina uno de los lenguajes más utilizados en el desarrollo web moderno.
                     </p>
+                    <img src="/img/javascript.png" alt="Curso de JavaScript" class="course-img">
                     <button
-                        class="btn btn-primary btn-inscripcion"
+                        class="btn btn-primary btn-inscripcion w-100 mt-3"
                         data-bs-toggle="modal"
                         data-bs-target="#modalInscripcion"
                         data-curso-id="3"
@@ -183,37 +199,106 @@
 
 </section>
 
-<section id="nosotros" class="bg-light py-5">
+<section id="nosotros" class="about-section py-5">
 
     <div class="container">
 
-        <h2 class="text-center mb-4">
-            Sobre Nosotros
-        </h2>
+        <div class="text-center mb-5">
 
-        <p class="text-center">
-            En CodeCrafters creemos que la educación tecnológica
-            debe ser accesible, práctica y orientada a las necesidades
-            del mundo laboral actual.
-        </p>
+            <span class="section-badge">
+                Nuestra Academia
+            </span>
 
-        <p class="text-center">
-            Nuestra misión es formar estudiantes capaces de diseñar,
-            desarrollar y gestionar soluciones digitales utilizando
-            herramientas y tecnologías modernas.
-        </p>
+            <h2 class="mt-3">
+                Sobre Nosotros
+            </h2>
+
+        </div>
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <div class="carousel-wrapper">
+
+                    <div
+                        id="carouselAcademia"
+                        class="carousel slide about-carousel"
+                        data-bs-ride="carousel"
+                        data-bs-interval="5000">
+
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img src="/img/academia.jpg" class="d-block w-100" alt="Academia CodeCrafters">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="/img/academia2.jpg" class="d-block w-100" alt="Academia CodeCrafters">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="/img/academia3.jpg" class="d-block w-100" alt="Academia CodeCrafters">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+
+                <h3 class="mb-4">
+                    Formando a los desarrolladores del mañana
+                </h3>
+
+                <p>
+
+                    En CodeCrafters creemos que la educación tecnológica
+                    debe ser accesible, práctica y orientada a las
+                    necesidades del mundo laboral actual.
+
+                </p>
+
+                <p>
+
+                    Nuestra misión es formar estudiantes capaces de
+                    diseñar, desarrollar y gestionar soluciones digitales
+                    utilizando herramientas y tecnologías modernas.
+
+                </p>
+
+                <p>
+
+                    Contamos con cursos enfocados en programación,
+                    desarrollo web y bases de datos, permitiendo que cada
+                    estudiante fortalezca sus habilidades mediante una
+                    metodología práctica y orientada a proyectos reales.
+
+                </p>
+
+            </div>
+
+        </div>
 
     </div>
 
 </section>
 
-<section id="contacto" class="container py-5">
+<section id="contacto" class="container py-5 contact-section">
 
     <h2 class="text-center mb-4">
         Contacto
     </h2>
 
-    <div class="text-center">
+    <div class="contact-card text-center mx-auto">
 
         <p>📧 contacto@codecrafters.cl</p>
 
